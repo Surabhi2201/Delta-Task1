@@ -1,0 +1,140 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    position:relative;
+    width:500px;
+    height:500px;
+    border:1px solid black;
+   
+}
+.grid-item{
+ border:1px solid black;
+ display:flex;
+ align-items:center;
+ justify-content: center;
+}
+
+.player1{
+    background-color: black;
+    color:white;
+}
+
+#titan{
+    color:red;
+    background-color: Yellow;
+}
+.titan{
+    color:red;
+    background-color: Yellow;
+}
+
+.box{
+    border:1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index: 1;
+  
+   }
+
+   .ball{
+    position:absolute;
+    width:15px;
+    height:15px;
+    background-color: red;
+    border-radius: 50%;
+    z-index:-2;
+   }
+   .ball2{
+    position:absolute;
+    width:15px;
+    height:15px;
+    background-color: rgb(21, 57, 201);
+    border-radius: 50%;
+    z-index:-2;
+   }
+
+.box:hover{
+    background-color: aqua;
+}
+ 
+.tank{
+    background-color: black;
+    color:goldenrod;
+}
+
+
+.riochet{
+    content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 62.5;
+        height: 62.5;
+        border-left: 2px solid rgb(15, 19, 1);
+        border-bottom: 2px solid rgb(1, 25, 3);
+        transform: rotate(45deg);
+        transform-origin: 0 0;
+}
+
+.line{
+    width:62.5px;
+    height:2px;
+    
+    transform: rotate(45deg);
+}
+
+.selected{
+    background-color:lightgreen
+}
+
+#tank2{
+    background-color:chocolate;
+    color:yellow;
+}
+.canon2{
+    background-color:rgb(11, 123, 158);
+    color:yellow;
+}
+#titan2{
+    background-color:rgb(91, 40, 3);
+    color:yellow;
+}
+.rio {
+    position: relative;
+    display:flex;
+    height:62.5px;
+    width:62.5px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.rio::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    bottom:5px;
+    right:5px;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid red; /* Change color and thickness as needed */
+    transform: rotate(45deg);
+    transform-origin: left top;
+    box-sizing: border-box;
+}
+
+.canon{
+    background-color: #daa520;
+    color: blue;
+    border:1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index: 1;
+}
+
